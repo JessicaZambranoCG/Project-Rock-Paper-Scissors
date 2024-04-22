@@ -38,27 +38,27 @@ function playGame(){
   let result = playsSingleRound(playerSelection, computerSelection);
 
   if (result.includes("win")) {
-  playerWins++;
+      playerWins++;
   } else if (result.includes("loses")) {
-  computerWins++;
+      computerWins++;
   }
 
 console.log("Player Wins: " + playerWins + " | Computer Wins: " + computerWins);
 
   if (playerWins === 3) {
-  return "¡Congratulations! You have won the game!";
+      return "¡Congratulations! You have won the game!";
   } else if (computerWins === 3) {
-  return "The computer has won the game sorry!";
+      return "The computer has won the game sorry!";
   } else {
-  return result;
+      return result;
   }
 }
 
   for(let i = 0; i < 5; i++){
   let gameResult = playGame();
   console.log(gameResult);
-  if (gameResult.includes("Congratulations") || gameResult.includes("sorry")) {
-  break;
+    if (gameResult.includes("Congratulations") || gameResult.includes("sorry")) {
+        break;
   }
 }
 
