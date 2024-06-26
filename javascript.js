@@ -55,8 +55,8 @@ console.log("Player Wins: " + playerWins + " | Computer Wins: " + computerWins);
 for(let i = 0; i <= 15; i++){
   let gameResult = playGame();
   console.log(gameResult);
-    if (gameResult.includes("Congratulations") || gameResult.includes("sorry")) {
-        break;
+  if (gameResult.includes("Congratulations") || gameResult.includes("sorry")) {
+    break;
   }
 }
 
